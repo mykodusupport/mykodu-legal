@@ -1,0 +1,151 @@
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --text: #2b2420;
+  --muted: #6b6258;
+  --border: #e8e1d8;
+  --accent: #c97b3d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1814;
+    --surface: #26201b;
+    --text: #f1ece5;
+    --muted: #b4a99c;
+    --border: #3a322a;
+    --accent: #e3a05f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+header.page-header {
+  margin-bottom: 32px;
+}
+
+.app-name {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 8px 0 16px;
+}
+
+.meta {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta p {
+  margin: 4px 0;
+}
+
+nav.crumb {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+nav.crumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav.crumb a:hover {
+  text-decoration: underline;
+}
+
+main h2 {
+  font-size: 19px;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+main h3 {
+  font-size: 16px;
+  margin-top: 28px;
+  color: var(--text);
+}
+
+main p, main li {
+  font-size: 15.5px;
+}
+
+main ul, main ol {
+  padding-left: 1.4em;
+}
+
+main ol li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.index-links {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.index-links li {
+  margin-bottom: 12px;
+}
+
+.index-links a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.index-links a:hover {
+  border-color: var(--accent);
+}
+
+.index-links span {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
